@@ -1,0 +1,40 @@
+{
+  "name": "exportmap",
+  "version": "0.0.1",
+  "description": "Tools for packages' exports spec",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "ava",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://zeakd@github.com/zeakd/exportmap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeakd/exportmap/issues"
+  },
+  "homepage": "https://github.com/zeakd/exportmap#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ava": "^5.1.1",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4",
+    "husky": "^7.0.0"
+  }
+}
